@@ -3,14 +3,19 @@
     "home": "Inicio",
     "projects": "Proyectos",
     "about": "Sobre mí",
-    "contacts": "Contacto"
+    "contacts": "Contacto",
+    "menu": "Menú",
+    "viewAllProjects": "Ver todos los proyectos"
   },
   "hero": {
     "welcome": "¡Hola! ¡Bienvenido a mi reino web! 👋",
-    "subtitle": "Desarrollador Frontend Senior creando experiencias web modernas y escalables"
+    "subtitle": "Desarrollador Frontend Senior creando experiencias web modernas y escalables",
+    "ctaProjects": "Ver Proyectos",
+    "ctaContact": "Contáctame"
   },
   "projects": {
     "title": "Mis Proyectos",
+    "subtitle": "Una selección de proyectos que he creado.",
     "viewProject": "Ver Proyecto",
     "backToProjects": "Volver a Proyectos",
     "techStack": "Stack Tecnológico"

@@ -1,7 +1,7 @@
 import { setRequestLocale } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { projects, getProjectBySlug } from '@/lib/projects';
+import { projects, getProjectBySlug, getGradientClass } from '@/lib/projects';
 import { routing } from '@/i18n/routing';
 import { TechTag } from '@/components/projects/TechTag';
 import { Link } from '@/i18n/navigation';
@@ -29,7 +29,7 @@ export default async function ProjectPage({
   return (
     <div className="min-h-screen">
       {/* Gradient hero */}
-      <div className={`h-72 md:h-96 bg-gradient-to-br ${project.gradient} flex items-end`}>
+      <div className={`h-72 md:h-96 bg-gradient-to-br ${getGradientClass(project.gradient)} flex items-end`}>
         <div className="max-w-6xl mx-auto w-full px-4 sm:px-6 pb-8">
           <Link
             href="/projects"

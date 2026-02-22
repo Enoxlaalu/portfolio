@@ -1,4 +1,7 @@
+'use client';
+
 import type { Project } from '@/lib/projects';
+import { getGradientClass } from '@/lib/projects';
 import { Link } from '@/i18n/navigation';
 import { TechTag } from './TechTag';
 import { Icon } from '@/components/ui/Icon';
@@ -10,7 +13,7 @@ export function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="rounded-xl overflow-hidden border border-border bg-surface shadow-sm hover:shadow-md transition-shadow">
       {/* Gradient header */}
-      <div className={`h-40 bg-gradient-to-br ${project.gradient}`} />
+      <div className={`h-40 bg-gradient-to-br ${getGradientClass(project.gradient)}`} />
 
       {/* Content */}
       <div className="p-5">

@@ -3,14 +3,19 @@
     "home": "Home",
     "projects": "Projects",
     "about": "About",
-    "contacts": "Contacts"
+    "contacts": "Contacts",
+    "menu": "Menu",
+    "viewAllProjects": "View all projects"
   },
   "hero": {
     "welcome": "Hello! Welcome to my web kingdom! 👋",
-    "subtitle": "Senior Frontend Developer crafting modern, scalable web experiences"
+    "subtitle": "Senior Frontend Developer crafting modern, scalable web experiences",
+    "ctaProjects": "View Projects",
+    "ctaContact": "Contact Me"
   },
   "projects": {
     "title": "My Projects",
+    "subtitle": "A selection of projects I've built.",
     "viewProject": "View Project",
     "backToProjects": "Back to Projects",
     "techStack": "Tech Stack"

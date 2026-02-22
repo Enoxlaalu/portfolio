@@ -1,13 +1,19 @@
 'use client';
 
 import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
 import { Icon } from '@/components/ui/Icon';
 
 export function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
-  if (!resolvedTheme) {
-    return <div className="w-9 h-9" />;
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return <div className="w-9 h-9" aria-hidden="true" />;
   }
 
   return (
