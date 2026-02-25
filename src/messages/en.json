@@ -18,7 +18,10 @@
     "subtitle": "A selection of projects I've built.",
     "viewProject": "View Project",
     "backToProjects": "Back to Projects",
-    "techStack": "Tech Stack"
+    "techStack": "Tech Stack",
+    "readme": "README",
+    "languages": "Languages",
+    "livePreview": "Live Preview"
   },
   "about": {
     "title": "About Me",

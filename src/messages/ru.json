@@ -18,7 +18,10 @@
     "subtitle": "Избранные проекты, которые я создал.",
     "viewProject": "Смотреть проект",
     "backToProjects": "Назад к проектам",
-    "techStack": "Стек технологий"
+    "techStack": "Стек технологий",
+    "readme": "README",
+    "languages": "Языки",
+    "livePreview": "Демо"
   },
   "about": {
     "title": "Обо мне",

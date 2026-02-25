@@ -18,7 +18,10 @@
     "subtitle": "Una selección de proyectos que he creado.",
     "viewProject": "Ver Proyecto",
     "backToProjects": "Volver a Proyectos",
-    "techStack": "Stack Tecnológico"
+    "techStack": "Stack Tecnológico",
+    "readme": "README",
+    "languages": "Lenguajes",
+    "livePreview": "Vista en vivo"
   },
   "about": {
     "title": "Sobre Mí",
