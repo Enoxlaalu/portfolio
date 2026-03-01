@@ -126,6 +126,7 @@ export const projects: Project[] = [
         ],
         github: 'https://github.com/enoxlaalu/mozio',
         githubRepo: 'enoxlaalu/mozio',
+        embedUrl: 'https://visionary-gingersnap-1fcbec.netlify.app',
     },
     {
         slug: 'react-chess',
