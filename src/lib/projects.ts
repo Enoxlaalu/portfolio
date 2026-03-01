@@ -3,6 +3,10 @@ const GRADIENT_MAP = {
     indigo: 'from-indigo-600 to-purple-800',
     yellow: 'from-yellow-500 to-orange-600',
     sky: 'from-sky-400 to-blue-600',
+    green: 'from-green-500 to-emerald-700',
+    orange: 'from-orange-400 to-amber-600',
+    teal: 'from-teal-500 to-cyan-800',
+    slate: 'from-slate-500 to-gray-800',
 } as const
 
 const COLOR_MAP = {
@@ -20,6 +24,8 @@ const COLOR_MAP = {
     'yellow-600': 'bg-yellow-600',
     'red-600': 'bg-red-600',
     'purple-600': 'bg-purple-600',
+    'orange-500': 'bg-orange-500',
+    'emerald-700': 'bg-emerald-700',
 } as const
 
 export type GradientKey = keyof typeof GRADIENT_MAP
@@ -71,55 +77,72 @@ export const projects: Project[] = [
         embedUrl: 'https://fascinating-panda-cffe64.netlify.app/',
     },
     {
-        slug: 'ecommerce-dashboard',
-        name: 'E-Commerce Dashboard',
+        slug: 'spotify-clone',
+        name: 'Spotify Clone',
         description:
-            'Full-stack admin dashboard with real-time analytics, inventory management, and order tracking.',
+            'Full-stack music streaming platform with a Next.js frontend and NestJS + MongoDB backend.',
         longDescription:
-            'A comprehensive e-commerce management system built with Next.js and Prisma. Features include real-time sales analytics with charts, inventory CRUD operations, order processing pipeline, and a responsive design using shadcn/ui components.',
-        gradient: 'indigo',
+            'A full-stack music streaming app with a Next.js + Redux Toolkit frontend and a NestJS + MongoDB backend. Features a polished Material-UI interface, server-side rendering, client-side state management, and a RESTful API with file upload support for track management. Client and server are deployed independently.',
+        gradient: 'green',
         tags: [
             { label: 'Next.js', color: 'gray-800' },
-            { label: 'Prisma', color: 'teal-600' },
-            { label: 'PostgreSQL', color: 'blue-800' },
-            { label: 'shadcn/ui', color: 'zinc-700' },
+            { label: 'NestJS', color: 'red-600' },
+            { label: 'MongoDB', color: 'green-600' },
+            { label: 'Redux Toolkit', color: 'purple-600' },
         ],
-        github: 'https://github.com',
-        demo: 'https://example.com',
+        github: 'https://github.com/enoxlaalu/spotify-nextjs-nestjs',
+        githubRepo: 'enoxlaalu/spotify-nextjs-nestjs',
     },
     {
-        slug: 'realtime-chat',
-        name: 'Real-time Chat',
+        slug: 'timberhub',
+        name: 'Timberhub',
         description:
-            'Scalable chat application with rooms, presence indicators, and message persistence.',
+            'Wood products catalog with server-side search, pagination, and product management — test assignment.',
         longDescription:
-            'A production-grade real-time chat application powered by Socket.io and Redis pub/sub for horizontal scaling. Features include multiple chat rooms, online presence indicators, message history with infinite scroll, file sharing, and Docker deployment.',
-        gradient: 'yellow',
+            'A timber products catalog and inventory system built as a test assignment for Timberhub. Users can browse and search wood listings by species, dimensions, drying method, and grade. Implements server-side search with pagination, product creation and editing forms, and Suspense boundaries for optimised data loading. Built with Next.js 13 App Router and SCSS.',
+        gradient: 'teal',
         tags: [
-            { label: 'Socket.io', color: 'yellow-600' },
-            { label: 'Redis', color: 'red-600' },
-            { label: 'Docker', color: 'blue-600' },
-            { label: 'Express', color: 'gray-600' },
+            { label: 'Next.js', color: 'gray-800' },
+            { label: 'TypeScript', color: 'blue-700' },
+            { label: 'SCSS', color: 'purple-600' },
+            { label: 'App Router', color: 'gray-600' },
         ],
-        github: 'https://github.com',
-        demo: 'https://example.com',
+        github: 'https://github.com/enoxlaalu/timberhub',
+        githubRepo: 'enoxlaalu/timberhub',
     },
     {
-        slug: 'weather-app',
-        name: 'Weather App',
+        slug: 'mozio',
+        name: 'Mozio Travel',
         description:
-            'Beautiful weather dashboard with 7-day forecasts, interactive charts, and location search.',
+            'Travel route search app with dynamic forms and URL state persistence — test assignment.',
         longDescription:
-            'A feature-rich weather application built with React and TypeScript, consuming a REST weather API. Displays current conditions, hourly and 7-day forecasts, historical data charts with Recharts, geolocation support, and favorite locations management.',
-        gradient: 'sky',
+            'A travel route search application built as a test assignment for Mozio. Users specify origin and destination cities, passenger count, and travel date to find available transport options. Features dynamic multi-field forms with React Hook Form, URL query parameter state persistence, MUI date pickers, and end-to-end test coverage with Cypress.',
+        gradient: 'orange',
         tags: [
             { label: 'React', color: 'blue-500' },
             { label: 'TypeScript', color: 'blue-700' },
-            { label: 'REST API', color: 'green-700' },
-            { label: 'Recharts', color: 'purple-600' },
+            { label: 'MUI', color: 'blue-600' },
+            { label: 'Cypress', color: 'emerald-700' },
         ],
-        github: 'https://github.com',
-        demo: 'https://example.com',
+        github: 'https://github.com/enoxlaalu/mozio',
+        githubRepo: 'enoxlaalu/mozio',
+    },
+    {
+        slug: 'react-chess',
+        name: 'Chess (OOP)',
+        description:
+            'Fully functional chess game built from scratch with object-oriented architecture and no external game engines.',
+        longDescription:
+            'A fully functional chess game implemented entirely from scratch using object-oriented programming. Includes a complete class hierarchy — Cell, Board, Figure, Pawn, Knight, Bishop, Rook, Queen, King — with full move validation for every piece type. Features turn management, lost figures tracking, and a countdown timer. No external game engines used.',
+        gradient: 'slate',
+        tags: [
+            { label: 'React', color: 'blue-500' },
+            { label: 'TypeScript', color: 'blue-700' },
+            { label: 'OOP', color: 'gray-600' },
+            { label: 'Vite', color: 'yellow-600' },
+        ],
+        github: 'https://github.com/enoxlaalu/react-chess-oop',
+        githubRepo: 'enoxlaalu/react-chess-oop',
     },
 ]
 
