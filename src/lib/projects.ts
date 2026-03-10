@@ -94,6 +94,24 @@ export const projects: Project[] = [
         githubRepo: 'enoxlaalu/spotify-nextjs-nestjs',
     },
     {
+        slug: 'aitiguru',
+        name: 'AitiGuru',
+        description:
+            'Product management dashboard with auth, paginated table, live search, and add-product modal — test assignment.',
+        longDescription:
+            'A single-page product management application built as a test assignment for AitiGuru. Features JWT-based authentication with remember-me persistence, a sortable paginated product table, debounced live search, and a modal form for adding products with react-hook-form + Zod validation. Implements a custom toast notification system and responsive layouts for tablet and mobile. Built with React 19, Zustand for state, and CSS Modules.',
+        gradient: 'indigo',
+        tags: [
+            { label: 'React 19', color: 'blue-500' },
+            { label: 'TypeScript', color: 'blue-700' },
+            { label: 'Zustand', color: 'orange-500' },
+            { label: 'Zod', color: 'blue-600' },
+        ],
+        github: 'https://github.com/enoxlaalu/AitiGuru',
+        githubRepo: 'enoxlaalu/AitiGuru',
+        embedUrl: 'https://resonant-blancmange-952e40.netlify.app',
+    },
+    {
         slug: 'timberhub',
         name: 'Timberhub',
         description:
