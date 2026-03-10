@@ -1,44 +1,44 @@
 {
-  "nav": {
-    "home": "Главная",
-    "projects": "Проекты",
-    "about": "Обо мне",
-    "contacts": "Контакты",
-    "menu": "Меню",
-    "viewAllProjects": "Все проекты"
-  },
-  "hero": {
-    "welcome": "Привет! Добро пожаловать в моё веб-королевство! 👋",
-    "subtitle": "Senior Frontend-разработчик, создающий современные масштабируемые веб-приложения",
-    "ctaProjects": "Смотреть проекты",
-    "ctaContact": "Написать мне"
-  },
-  "projects": {
-    "title": "Мои проекты",
-    "subtitle": "Избранные проекты, которые я создал.",
-    "viewProject": "Смотреть проект",
-    "backToProjects": "Назад к проектам",
-    "techStack": "Стек технологий",
-    "readme": "README",
-    "languages": "Языки",
-    "livePreview": "Демо"
-  },
-  "about": {
-    "title": "Обо мне",
-    "bio": "Я Senior Frontend-разработчик с 7+ лет опыта в создании высокопроизводительных веб-приложений. Специализируюсь на React, Next.js и TypeScript. Увлечён чистым кодом, отличным UX и современными веб-технологиями.",
-    "skills": "Навыки",
-    "experience": "Опыт",
-    "yearsExp": "7+ лет опыта",
-    "projectsDone": "50+ завершённых проектов",
-    "happyClients": "30+ довольных клиентов"
-  },
-  "contacts": {
-    "title": "Связаться",
-    "subtitle": "Есть проект? Давайте работать вместе.",
-    "email": "Почта",
-    "github": "GitHub",
-    "linkedin": "LinkedIn",
-    "telegram": "Telegram",
-    "sendMessage": "Написать"
-  }
+    "nav": {
+        "home": "Главная",
+        "projects": "Проекты",
+        "about": "Обо мне",
+        "contacts": "Контакты",
+        "menu": "Меню",
+        "viewAllProjects": "Все проекты"
+    },
+    "hero": {
+        "welcome": "Привет! Добро пожаловать в мою мастерскую",
+        "subtitle": "Senior Frontend-разработчик, создающий современные масштабируемые веб-приложения",
+        "ctaProjects": "Смотреть проекты",
+        "ctaContact": "Написать мне"
+    },
+    "projects": {
+        "title": "Мои проекты",
+        "subtitle": "Избранные проекты, которые я создал.",
+        "viewProject": "Смотреть проект",
+        "backToProjects": "Назад к проектам",
+        "techStack": "Стек технологий",
+        "readme": "README",
+        "languages": "Языки",
+        "livePreview": "Демо"
+    },
+    "about": {
+        "title": "Обо мне",
+        "bio": "Я Senior Frontend-разработчик с 7+ лет опыта в создании высокопроизводительных веб-приложений. Специализируюсь на React, Next.js и TypeScript. Увлечён чистым кодом, отличным UX и современными веб-технологиями.",
+        "skills": "Навыки",
+        "experience": "Опыт",
+        "yearsExp": "7+ лет опыта",
+        "projectsDone": "50+ завершённых проектов",
+        "happyClients": "30+ довольных клиентов"
+    },
+    "contacts": {
+        "title": "Связаться",
+        "subtitle": "Есть проект? Давайте работать вместе.",
+        "email": "Почта",
+        "github": "GitHub",
+        "linkedin": "LinkedIn",
+        "telegram": "Telegram",
+        "sendMessage": "Написать"
+    }
 }

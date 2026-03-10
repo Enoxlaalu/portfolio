@@ -6,6 +6,7 @@ import { ThemeToggle } from './ThemeToggle';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { ProjectsDropdown } from './ProjectsDropdown';
 import { MobileMenu } from './MobileMenu';
+import { Logo } from './Logo';
 
 export function Header() {
   const t = useTranslations('nav');
@@ -14,8 +15,8 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-40 border-b border-border bg-background/80 backdrop-blur-md">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="text-xl font-bold text-foreground hover:text-accent transition-colors">
-          &lt;Dev /&gt;
+        <Link href="/" aria-label="Home">
+          <Logo />
         </Link>
 
         {/* Desktop nav */}

@@ -1,0 +1,54 @@
+.wrapper {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.wrapper:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px var(--accent));
+}
+
+/* Image container — clips the photo into a perfect circle */
+.inner {
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* Rainbow hue-rotate ring */
+.ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: conic-gradient(
+    hsl(220, 90%, 60%),
+    hsl(280, 90%, 60%),
+    hsl(330, 90%, 60%),
+    hsl(20,  90%, 60%),
+    hsl(60,  90%, 60%),
+    hsl(160, 90%, 60%),
+    hsl(220, 90%, 60%)
+  );
+  animation: spin 3s linear infinite;
+}
+
+/* Mask so only the outer ring is visible */
+.ring::after {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  background: var(--background);
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ring { animation: none; }
+}

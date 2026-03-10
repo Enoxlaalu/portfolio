@@ -4,7 +4,9 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    qualities: [70, 75, 80],
+  },
 };
 
 export default withNextIntl(nextConfig);

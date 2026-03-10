@@ -1,44 +1,44 @@
 {
-  "nav": {
-    "home": "Home",
-    "projects": "Projects",
-    "about": "About",
-    "contacts": "Contacts",
-    "menu": "Menu",
-    "viewAllProjects": "View all projects"
-  },
-  "hero": {
-    "welcome": "Hello! Welcome to my web kingdom! 👋",
-    "subtitle": "Senior Frontend Developer crafting modern, scalable web experiences",
-    "ctaProjects": "View Projects",
-    "ctaContact": "Contact Me"
-  },
-  "projects": {
-    "title": "My Projects",
-    "subtitle": "A selection of projects I've built.",
-    "viewProject": "View Project",
-    "backToProjects": "Back to Projects",
-    "techStack": "Tech Stack",
-    "readme": "README",
-    "languages": "Languages",
-    "livePreview": "Live Preview"
-  },
-  "about": {
-    "title": "About Me",
-    "bio": "I'm a Senior Frontend Developer with 7+ years of experience building high-performance web applications. I specialize in React, Next.js, and TypeScript, and I'm passionate about clean code, great UX, and modern web technologies.",
-    "skills": "Skills",
-    "experience": "Experience",
-    "yearsExp": "7+ Years of Experience",
-    "projectsDone": "50+ Projects Completed",
-    "happyClients": "30+ Happy Clients"
-  },
-  "contacts": {
-    "title": "Get In Touch",
-    "subtitle": "Have a project in mind? Let's work together.",
-    "email": "Email",
-    "github": "GitHub",
-    "linkedin": "LinkedIn",
-    "telegram": "Telegram",
-    "sendMessage": "Send Message"
-  }
+    "nav": {
+        "home": "Home",
+        "projects": "Projects",
+        "about": "About",
+        "contacts": "Contacts",
+        "menu": "Menu",
+        "viewAllProjects": "View all projects"
+    },
+    "hero": {
+        "welcome": "Hi! Welcome to my workshop",
+        "subtitle": "Senior Frontend Developer crafting modern, scalable web experiences",
+        "ctaProjects": "View Projects",
+        "ctaContact": "Contact Me"
+    },
+    "projects": {
+        "title": "My Projects",
+        "subtitle": "A selection of projects I've built.",
+        "viewProject": "View Project",
+        "backToProjects": "Back to Projects",
+        "techStack": "Tech Stack",
+        "readme": "README",
+        "languages": "Languages",
+        "livePreview": "Live Preview"
+    },
+    "about": {
+        "title": "About Me",
+        "bio": "I'm a Senior Frontend Developer with 7+ years of experience building high-performance web applications. I specialize in React, Next.js, and TypeScript, and I'm passionate about clean code, great UX, and modern web technologies.",
+        "skills": "Skills",
+        "experience": "Experience",
+        "yearsExp": "7+ Years of Experience",
+        "projectsDone": "50+ Projects Completed",
+        "happyClients": "30+ Happy Clients"
+    },
+    "contacts": {
+        "title": "Get In Touch",
+        "subtitle": "Have a project in mind? Let's work together.",
+        "email": "Email",
+        "github": "GitHub",
+        "linkedin": "LinkedIn",
+        "telegram": "Telegram",
+        "sendMessage": "Send Message"
+    }
 }
