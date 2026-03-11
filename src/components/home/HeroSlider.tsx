@@ -20,36 +20,63 @@ const SLIDES = [
 
 const N = SLIDES.length;
 
+// [clone-of-last, ...real slides, clone-of-first]
+const TRACK = [SLIDES[N - 1], ...SLIDES, SLIDES[0]];
+
 export function HeroSlider() {
   const t = useTranslations('hero');
-  const [current, setCurrent] = useState(0);
+  // index into TRACK; 1 = first real slide
+  const [index, setIndex] = useState(1);
+  const [animated, setAnimated] = useState(true);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const transitioning = useRef(false);
+  const reducedMotion = useRef(false);
+
+  // real dot index (0-based)
+  const dotIndex = index === 0 ? N - 1 : index === N + 1 ? 0 : index - 1;
 
   const resetTimer = useCallback(() => {
     if (timerRef.current) clearInterval(timerRef.current);
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (prefersReducedMotion) return;
+    if (reducedMotion.current) return;
     timerRef.current = setInterval(() => {
-      setCurrent((i) => (i + 1) % N);
+      if (!transitioning.current) {
+        setAnimated(true);
+        setIndex((i) => i + 1);
+      }
     }, 5000);
   }, []);
 
   useEffect(() => {
+    reducedMotion.current = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     resetTimer();
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
   }, [resetTimer]);
 
-  function prev() {
-    setCurrent((i) => (i - 1 + N) % N);
+  // After sliding to a clone, jump to the real slide without animation
+  function handleTransitionEnd() {
+    transitioning.current = false;
+    if (index === 0) {
+      setAnimated(false);
+      setIndex(N);
+    } else if (index === N + 1) {
+      setAnimated(false);
+      setIndex(1);
+    }
+  }
+
+  function navigate(newIndex: number | ((i: number) => number)) {
+    if (transitioning.current) return;
+    transitioning.current = true;
+    setAnimated(true);
+    setIndex(newIndex);
     resetTimer();
   }
 
-  function next() {
-    setCurrent((i) => (i + 1) % N);
-    resetTimer();
-  }
+  function prev() { navigate((i) => i - 1); }
+  function next() { navigate((i) => i + 1); }
+  function goTo(realIndex: number) { navigate(realIndex + 1); }
 
   return (
     <div
@@ -60,18 +87,19 @@ export function HeroSlider() {
     >
       {/* Slides — images are decorative backgrounds, content is in the text overlay */}
       <div
-        className="flex h-full transition-transform duration-700 ease-in-out motion-reduce:transition-none"
-        style={{ transform: `translateX(-${current * 100}%)` }}
+        className={`flex h-full ${animated ? 'transition-transform duration-700 ease-in-out motion-reduce:transition-none' : ''}`}
+        style={{ transform: `translateX(-${index * 100}%)` }}
+        onTransitionEnd={handleTransitionEnd}
       >
-        {SLIDES.map((slide, i) => (
-          <div key={slide.id} className="relative min-w-full h-full flex-shrink-0 bg-gray-900">
+        {TRACK.map((slide, i) => (
+          <div key={`${slide.id}-${i}`} className="relative min-w-full h-full flex-shrink-0 bg-gray-900">
             <Image
               src={slide.src}
               alt=""
               fill
               sizes="100vw"
               className="object-cover"
-              priority={i === 0}
+              priority={i === 1}
               quality={80}
             />
           </div>
@@ -123,11 +151,11 @@ export function HeroSlider() {
         {SLIDES.map((slide, i) => (
           <button
             key={slide.id}
-            onClick={() => { setCurrent(i); resetTimer(); }}
+            onClick={() => goTo(i)}
             aria-label={`Go to slide ${i + 1}`}
-            aria-current={i === current ? 'true' : undefined}
+            aria-current={i === dotIndex ? 'true' : undefined}
             className={`h-2 rounded-full transition-all duration-300 motion-reduce:transition-none ${
-              i === current ? 'bg-white w-6' : 'bg-white/40 w-2'
+              i === dotIndex ? 'bg-white w-6' : 'bg-white/40 w-2'
             }`}
           />
         ))}

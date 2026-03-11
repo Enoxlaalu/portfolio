@@ -43,6 +43,8 @@ src/
 ├── components/
 │   ├── layout/
 │   │   ├── Header.tsx              # fixed header; logo = Logo component (left), nav, controls (right)
+│   │   ├── Logo.tsx                # circular avatar + rainbow ring animation
+│   │   ├── Logo.module.css         # CSS module: ring keyframes, wrapper, inner clip
 │   │   ├── ThemeToggle.tsx
 │   │   ├── LanguageSwitcher.tsx    # EN/RU/ES flags
 │   │   ├── ProjectsDropdown.tsx
@@ -100,7 +102,8 @@ Defined in `globals.css`, available as `var(--name)` and Tailwind utilities:
 public/
 └── images/
     ├── slider/slide-1.jpg … slide-9.jpg   # hero carousel
-    └── avatar.jpeg                         # avatar photo (used in header logo + favicon)
+    └── avatar.jpeg                         # avatar photo (used in header logo)
+src/app/icon.png                            # circular favicon generated from avatar via sharp
 ```
 
 Images use `next/image` with `fill` + `sizes` + `priority` for above-the-fold.

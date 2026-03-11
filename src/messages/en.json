@@ -25,12 +25,13 @@
     },
     "about": {
         "title": "About Me",
-        "bio": "I'm a Senior Frontend Developer with 7+ years of experience building high-performance web applications. I specialize in React, Next.js, and TypeScript, and I'm passionate about clean code, great UX, and modern web technologies.",
+        "bio": "Senior Frontend Developer with 9+ years of commercial experience building product frontend applications. Specialized in React, TypeScript, and SPA/SSR architecture. Worked with fintech and insurance products, built frontend from scratch, created internal libraries and UI kits, introduced testing and improved code quality at team and company levels.",
+        "bio2": "I regularly take responsibility for architectural decisions, performance, developer experience, and stability of production systems. I have experience in technical leadership, code review, and developer mentoring.",
         "skills": "Skills",
         "experience": "Experience",
-        "yearsExp": "7+ Years of Experience",
-        "projectsDone": "50+ Projects Completed",
-        "happyClients": "30+ Happy Clients"
+        "yearsExp": "9+ Years of Experience",
+        "companiesStat": "5+ Commercial Projects",
+        "techLeadStat": "Team Lead Experience"
     },
     "contacts": {
         "title": "Get In Touch",
