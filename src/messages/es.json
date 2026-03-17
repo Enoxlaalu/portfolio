@@ -34,12 +34,11 @@
         "techLeadStat": "Experiencia como Team Lead"
     },
     "contacts": {
-        "title": "Contáctame",
+        "title": "Contacto",
         "subtitle": "¿Tienes un proyecto en mente? Trabajemos juntos.",
         "email": "Correo",
         "github": "GitHub",
         "linkedin": "LinkedIn",
-        "telegram": "Telegram",
-        "sendMessage": "Enviar Mensaje"
+        "telegram": "Telegram"
     }
 }

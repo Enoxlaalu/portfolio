@@ -34,12 +34,11 @@
         "techLeadStat": "Опыт Team Lead"
     },
     "contacts": {
-        "title": "Связаться",
+        "title": "Контакты",
         "subtitle": "Есть проект? Давайте работать вместе.",
         "email": "Почта",
         "github": "GitHub",
         "linkedin": "LinkedIn",
-        "telegram": "Telegram",
-        "sendMessage": "Написать"
+        "telegram": "Telegram"
     }
 }
