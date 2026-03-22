@@ -1,6 +1,6 @@
 # Portfolio
 
-> **Live:** [bejewelled-1faun-ac8bce.netlify.app](https://bejewelled-1faun-ac8bce.netlify.app/)
+> **Live:** [bejewelled-faun-ac8bce.netlify.app](https://bejewelled-faun-ac8bce.netlify.app/)
 
 Personal portfolio of a Senior Frontend Developer with 9+ years of experience. Built with Next.js 16, React 19, TypeScript, and Tailwind CSS v4.
 
@@ -17,25 +17,25 @@ Personal portfolio of a Senior Frontend Developer with 9+ years of experience. B
 
 ## Stack
 
-| Layer | Tech |
-|---|---|
-| Framework | Next.js 16 (App Router) |
-| UI | React 19, Tailwind CSS v4 |
-| Language | TypeScript (strict) |
-| i18n | next-intl (EN / RU / ES) |
-| Theming | next-themes (dark mode) |
-| Fonts | Geist Sans & Mono (next/font) |
+| Layer     | Tech                          |
+| --------- | ----------------------------- |
+| Framework | Next.js 16 (App Router)       |
+| UI        | React 19, Tailwind CSS v4     |
+| Language  | TypeScript (strict)           |
+| i18n      | next-intl (EN / RU / ES)      |
+| Theming   | next-themes (dark mode)       |
+| Fonts     | Geist Sans & Mono (next/font) |
 
 ## Projects Showcased
 
-| Project | Stack |
-|---|---|
-| [Netflix-ChatGPT](https://github.com/enoxlaalu/netflix-chatGPT) | React, TypeScript, OpenAI API, Tailwind |
-| [Spotify Clone](https://github.com/enoxlaalu/spotify-nextjs-nestjs) | Next.js, NestJS, MongoDB, Redux Toolkit |
-| [AitiGuru](https://github.com/enoxlaalu/AitiGuru) | React 19, Zustand, Zod, CSS Modules |
-| [Timberhub](https://github.com/enoxlaalu/timberhub) | Next.js 13, TypeScript, SCSS, App Router |
-| [Mozio Travel](https://github.com/enoxlaalu/mozio) | React, MUI, React Hook Form, Cypress |
-| [Chess (OOP)](https://github.com/enoxlaalu/react-chess-oop) | React, TypeScript, Vite |
+| Project                                                             | Stack                                    |
+| ------------------------------------------------------------------- | ---------------------------------------- |
+| [Netflix-ChatGPT](https://github.com/enoxlaalu/netflix-chatGPT)     | React, TypeScript, OpenAI API, Tailwind  |
+| [Spotify Clone](https://github.com/enoxlaalu/spotify-nextjs-nestjs) | Next.js, NestJS, MongoDB, Redux Toolkit  |
+| [AitiGuru](https://github.com/enoxlaalu/AitiGuru)                   | React 19, Zustand, Zod, CSS Modules      |
+| [Timberhub](https://github.com/enoxlaalu/timberhub)                 | Next.js 13, TypeScript, SCSS, App Router |
+| [Mozio Travel](https://github.com/enoxlaalu/mozio)                  | React, MUI, React Hook Form, Cypress     |
+| [Chess (OOP)](https://github.com/enoxlaalu/react-chess-oop)         | React, TypeScript, Vite                  |
 
 ## Getting Started
 
