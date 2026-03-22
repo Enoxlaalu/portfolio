@@ -92,6 +92,7 @@ export const projects: Project[] = [
         ],
         github: 'https://github.com/enoxlaalu/spotify-nextjs-nestjs',
         githubRepo: 'enoxlaalu/spotify-nextjs-nestjs',
+        embedUrl: 'https://ephemeral-duckanoo-e6abab.netlify.app/',
     },
     {
         slug: 'aitiguru',
@@ -109,7 +110,7 @@ export const projects: Project[] = [
         ],
         github: 'https://github.com/enoxlaalu/AitiGuru',
         githubRepo: 'enoxlaalu/AitiGuru',
-        embedUrl: 'https://resonant-blancmange-952e40.netlify.app',
+        embedUrl: 'https://resonant-blancmange-952e40.netlify.app/',
     },
     {
         slug: 'timberhub',
@@ -127,6 +128,7 @@ export const projects: Project[] = [
         ],
         github: 'https://github.com/enoxlaalu/timberhub',
         githubRepo: 'enoxlaalu/timberhub',
+        embedUrl: 'https://poetic-tarsier-f3f642.netlify.app/',
     },
     {
         slug: 'mozio',
@@ -144,7 +146,7 @@ export const projects: Project[] = [
         ],
         github: 'https://github.com/enoxlaalu/mozio',
         githubRepo: 'enoxlaalu/mozio',
-        embedUrl: 'https://visionary-gingersnap-1fcbec.netlify.app',
+        embedUrl: 'https://visionary-gingersnap-1fcbec.netlify.app/',
     },
     {
         slug: 'react-chess',
@@ -162,6 +164,7 @@ export const projects: Project[] = [
         ],
         github: 'https://github.com/enoxlaalu/react-chess-oop',
         githubRepo: 'enoxlaalu/react-chess-oop',
+        embedUrl: 'https://react-chess-oop.netlify.app/',
     },
 ]
 
