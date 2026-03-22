@@ -43,3 +43,6 @@ next-env.d.ts
 # Claude Code
 .claude/
 docs/
+
+# Local Netlify folder
+.netlify
