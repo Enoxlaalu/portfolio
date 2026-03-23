@@ -27,7 +27,12 @@ export function ProjectsDropdown() {
           className="flex items-center gap-1 px-3 py-2 rounded-lg text-foreground hover:bg-surface transition-colors text-sm font-medium"
         >
           {t('projects')}
-          <Icon name="chevron-down" className={`w-4 h-4 transition-transform ${open ? 'rotate-180' : ''}`} />
+          <Icon
+            name="chevron-down"
+            className={`w-4 h-4 transition-transform ${
+              open ? 'rotate-180' : ''
+            }`}
+          />
         </button>
       }
     >
@@ -40,10 +45,14 @@ export function ProjectsDropdown() {
             onClick={() => setOpen(false)}
           >
             <div className="flex items-center justify-between">
-              <span className="text-sm font-medium text-foreground">{project.name}</span>
+              <span className="text-sm font-medium text-foreground">
+                {project.name}
+              </span>
               <Icon name="arrow-right" className="w-3.5 h-3.5 text-muted" />
             </div>
-            <p className="text-xs text-muted line-clamp-1">{project.description}</p>
+            <p className="text-xs text-muted line-clamp-1">
+              {project.description}
+            </p>
             <div className="flex flex-wrap gap-1">
               {project.tags.slice(0, 3).map((tag) => (
                 <TechTag key={tag.label} tag={tag} />

@@ -46,13 +46,19 @@ export const Dropdown = memo(function Dropdown({
       ref={containerRef}
       className={`relative${className ? ` ${className}` : ''}`}
       tabIndex={-1}
-      onKeyDown={(e) => { if (e.key === 'Escape') onClose(); }}
+      onKeyDown={(e) => {
+        if (e.key === 'Escape') onClose();
+      }}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
       {trigger}
       {open && (
-        <div className={`absolute top-full mt-1 z-20 ${align === 'right' ? 'right-0' : 'left-0'}`}>
+        <div
+          className={`absolute top-full mt-1 z-20 ${
+            align === 'right' ? 'right-0' : 'left-0'
+          }`}
+        >
           <div className="absolute -top-1 inset-x-0 h-1" />
           {children}
         </div>

@@ -47,7 +47,9 @@ export function HeroSlider() {
   }, []);
 
   useEffect(() => {
-    reducedMotion.current = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    reducedMotion.current = window.matchMedia(
+      '(prefers-reduced-motion: reduce)',
+    ).matches;
     resetTimer();
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
@@ -74,9 +76,15 @@ export function HeroSlider() {
     resetTimer();
   }
 
-  function prev() { navigate((i) => i - 1); }
-  function next() { navigate((i) => i + 1); }
-  function goTo(realIndex: number) { navigate(realIndex + 1); }
+  function prev() {
+    navigate((i) => i - 1);
+  }
+  function next() {
+    navigate((i) => i + 1);
+  }
+  function goTo(realIndex: number) {
+    navigate(realIndex + 1);
+  }
 
   return (
     <div
@@ -87,12 +95,19 @@ export function HeroSlider() {
     >
       {/* Slides — images are decorative backgrounds, content is in the text overlay */}
       <div
-        className={`flex h-full ${animated ? 'transition-transform duration-700 ease-in-out motion-reduce:transition-none' : ''}`}
+        className={`flex h-full ${
+          animated
+            ? 'transition-transform duration-700 ease-in-out motion-reduce:transition-none'
+            : ''
+        }`}
         style={{ transform: `translateX(-${index * 100}%)` }}
         onTransitionEnd={handleTransitionEnd}
       >
         {TRACK.map((slide, i) => (
-          <div key={`${slide.id}-${i}`} className="relative min-w-full h-full flex-shrink-0 bg-gray-900">
+          <div
+            key={`${slide.id}-${i}`}
+            className="relative min-w-full h-full flex-shrink-0 bg-gray-900"
+          >
             <Image
               src={slide.src}
               alt=""

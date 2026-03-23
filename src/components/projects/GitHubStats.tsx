@@ -9,7 +9,11 @@ export function GitHubStats({ repo, locale }: GitHubStatsProps) {
   const date = new Date(repo.updatedAt);
   const updated = isNaN(date.getTime())
     ? null
-    : date.toLocaleDateString(locale, { year: 'numeric', month: 'short', day: 'numeric' });
+    : date.toLocaleDateString(locale, {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+      });
 
   return (
     <div className="rounded-xl border border-border bg-surface p-5 space-y-4">

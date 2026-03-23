@@ -59,7 +59,9 @@ export async function fetchReadmeHtml(repo: string): Promise<string | null> {
   }
 }
 
-export async function fetchLanguages(repo: string): Promise<GitHubLanguages | null> {
+export async function fetchLanguages(
+  repo: string,
+): Promise<GitHubLanguages | null> {
   try {
     const res = await fetch(`${BASE}/repos/${repo}/languages`, {
       headers: headers(),

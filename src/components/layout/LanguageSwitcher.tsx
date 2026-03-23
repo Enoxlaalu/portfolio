@@ -41,7 +41,12 @@ export function LanguageSwitcher() {
         >
           <span>{current.flag}</span>
           <span className="hidden sm:inline">{current.label}</span>
-          <Icon name="chevron-down" className={`w-4 h-4 transition-transform ${open ? 'rotate-180' : ''}`} />
+          <Icon
+            name="chevron-down"
+            className={`w-4 h-4 transition-transform ${
+              open ? 'rotate-180' : ''
+            }`}
+          />
         </button>
       }
     >
@@ -57,7 +62,9 @@ export function LanguageSwitcher() {
             aria-selected={loc.code === locale}
             onClick={() => switchLocale(loc.code)}
             className={`w-full flex items-center gap-2 px-4 py-2 text-sm hover:bg-surface transition-colors ${
-              loc.code === locale ? 'text-accent font-medium' : 'text-foreground'
+              loc.code === locale
+                ? 'text-accent font-medium'
+                : 'text-foreground'
             }`}
           >
             <span>{loc.flag}</span>

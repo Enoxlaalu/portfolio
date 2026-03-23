@@ -18,7 +18,9 @@ interface LanguagesBarProps {
 }
 
 export function LanguagesBar({ languages }: LanguagesBarProps) {
-  const frontend = Object.entries(languages).filter(([lang]) => lang in FRONTEND_LANGS);
+  const frontend = Object.entries(languages).filter(
+    ([lang]) => lang in FRONTEND_LANGS,
+  );
   const filteredTotal = frontend.reduce((sum, [, bytes]) => sum + bytes, 0);
   if (filteredTotal === 0) return null;
 
@@ -48,8 +50,14 @@ export function LanguagesBar({ languages }: LanguagesBarProps) {
       </div>
       <div className="flex flex-wrap gap-x-4 gap-y-1">
         {entries.map(({ lang, pct, color }) => (
-          <span key={lang} className="flex items-center gap-1 text-xs text-muted">
-            <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: color }} />
+          <span
+            key={lang}
+            className="flex items-center gap-1 text-xs text-muted"
+          >
+            <span
+              className="w-2.5 h-2.5 rounded-full shrink-0"
+              style={{ backgroundColor: color }}
+            />
             {lang}
             <span className="text-muted/60">{pct.toFixed(1)}%</span>
           </span>

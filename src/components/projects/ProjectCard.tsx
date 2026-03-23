@@ -13,12 +13,20 @@ export function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="rounded-xl overflow-hidden border border-border bg-surface shadow-sm hover:shadow-md transition-shadow">
       {/* Gradient header */}
-      <div className={`h-40 bg-gradient-to-br ${getGradientClass(project.gradient)}`} />
+      <div
+        className={`h-40 bg-gradient-to-br ${getGradientClass(
+          project.gradient,
+        )}`}
+      />
 
       {/* Content */}
       <div className="p-5">
-        <h3 className="text-lg font-semibold text-foreground mb-2">{project.name}</h3>
-        <p className="text-muted text-sm mb-4 line-clamp-2">{project.description}</p>
+        <h3 className="text-lg font-semibold text-foreground mb-2">
+          {project.name}
+        </h3>
+        <p className="text-muted text-sm mb-4 line-clamp-2">
+          {project.description}
+        </p>
 
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mb-4">
